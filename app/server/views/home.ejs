@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<title>Home Page</title>
+
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/form-register.css">
+	<link rel="stylesheet" href="css/c3-b03125fa.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+<link rel="stylesheet" href="css/jqcloud.min.css">
+
+</head>
+
+	<header>
+		<h1>Recommender</h1>
+    </header>
+		<div class="container-fluid">
+        <div class="row">
+					<div class="col-sm-12">
+						 <div class="layout_box">
+								 <div class="layout_box_header">
+										 <input style="font-size: 20px;" value="Question 1" disabled>
+								 </div>
+								 <div class="layout_box_content">
+										 <div id='prosecuting_agency'>
+											 <p id="q1">
+												 I was presented with this question in an end of module open book exam today and found myself lost. i was reading Head first Javaand both definitions seemed to be exactly the same. i was just wondering what the MAIN difference was for my own piece of mind. i know there are a number of similar questions to this but, none i have seen which provide a definitive answer.Thanks, Darren
+											 </p>
+											 <button type="button" name ="q1">Get Recommendations</button>
+										 </div>
+								 </div>
+						 </div>
+				 </div>
+				 <div class="col-sm-12">
+						<div class="layout_box">
+								<div class="layout_box_header">
+										<input style="font-size: 20px;" value="Accepted Answer 1" disabled>
+								</div>
+								<div class="layout_box_content">
+										<div id='prosecuting_agency1'>
+											<p id="aa1">
+												Inheritance is when a 'class' derives from an existing 'class'.So if you have a Person class, then you have a Student class that extends Person, Student inherits all the things that Person has.There are some details around the access modifiers you put on the fields/methods in Person, but that's the basic idea.For example, if you have a private field on Person, Student won't see it because its private, and private fields are not visible to subclasses.Polymorphism deals with how the program decides which methods it should use, depending on what type of thing it has.If you have a Person, which has a read method, and you have a Student which extends Person, which has its own implementation of read, which method gets called is determined for you by the runtime, depending if you have a Person or a Student.It gets a bit tricky, but if you do something likePerson p = new Student();p.read();the read method on Student gets called.Thats the polymorphism in action.You can do that assignment because a Student is a Person, but the runtime is smart enough to know that the actual type of p is Student.Note that details differ among languages.You can do inheritance in javascript for example, but its completely different than the way it works in Java.
+											</p>
+											<button type="button" name ="aa1">getRecommendations</button>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px;" value="Answer 1" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency2'>
+										 <p id="a1">
+											 Polymorphism: The ability to treat objects of different types in a similar manner.Example: Giraffe and Crocodile are both Animals, and animals can Move.If you have an instance of an Animal then you can call Move without knowing or caring what type of animal it is.Inheritance: This is one way of achieving both Polymorphism and code reuse at the same time.Other forms of polymorphism:There are other way of achieving polymorphism, such as interfaces, which provide only polymorphism but no code reuse (sometimes the code is quite different, such as Move for a Snake would be quite different from Move for a Dog, in which case an Interface would be the better polymorphic choice in this case.In other dynamic languages polymorphism can be achieved with Duck Typing, which is the classes don't even need to share the same base class or interface, they just need a method with the same name.Or even more dynamic like Javascript, you don't even need classes at all, just an object with the same method name can be used polymorphically.
+										 </p>
+										 <button type="button" name ="a1">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px;" value="Question 2" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency3'>
+										 <p id="q2">
+											 I found out that the above piece of code is perfectly legal in Java. I have the following questions. ThanksAdded one more question regarding Abstract method classes.
+										 </br>
+										 <code>public class TestClass{public static void main(String[] args) {TestClass t = new TestClass();}private static void testMethod(){abstract class TestMethod{int a;int b;int c;abstract void implementMe();}class DummyClass extends TestMethod{void implementMe(){}}DummyClass dummy = new DummyClass();}}</code>
+										 </p>
+
+										 <button type="button" name ="q2">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px;" value="Question 3" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency4'>
+										 <p id="q3">
+											 In java it's a bit difficult to implement a deep object copy function. What steps you take to ensure the original object and the cloned one share no reference?
+										 </p>
+										 <button type="button" name ="q3">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px;" value="Answer 2" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency5'>
+										 <p id="a2">
+											 You can make a deep copy serialization without creating some files. Copy: Restore: </br>
+											 <code>ByteArrayOutputStream bos = new ByteArrayOutputStream();ObjectOutputStream oos = new ObjectOutputStream(bos);oos.writeObject(object);oos.flush();oos.close();bos.close();byte[] byteData = bos.toByteArray();; ByteArrayInputStream bais = new ByteArrayInputStream(byteData);(Object) object = (Object) new ObjectInputStream(bais).readObject();</code>
+										 </p>
+										 <button type="button" name ="a2">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px;" value="Answer 3" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency6'>
+										 <p id="a3">
+											 Java has the ability to create classes at runtime. These classes are known as Synthetic Classes or Dynamic Proxies. See for more information. Other open-source libraries, such as and also allow you to generate synthetic classes, and are more powerful than the libraries provided with the JRE. Synthetic classes are used by AOP (Aspect Oriented Programming) libraries such as Spring AOP and AspectJ, as well as ORM libraries such as Hibernate.
+										 </p>
+										 <button type="button" name ="a3">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px; "value="Accepted Answer 2" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency7'>
+										 <p id="aa2">
+											 A safe way is to serialize the object, then deserialize.This ensures everything is a brand new reference.about how to do this efficiently. Caveats: It's possible for classes to override serialization such that new instances are created, e.g. for singletons.Also this of course doesn't work if your classes aren't Serializable.
+										 </p>
+										 <button type="button" name ="aa2">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px;" value="Answer 4" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency8'>
+										 <p id="a4">
+											  comment this code</br>
+												<code>/*if (savedinstancestate == null) {     getsupportfragmentmanager().begintransaction()             .add(r.id.container  new placeholderfragment())             .commit(); }*/  </code>
+										 </p>
+										 <button type="button" name ="a4">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					 <div class="layout_box">
+							 <div class="layout_box_header">
+									 <input style="font-size: 20px;" value="Question 4" disabled>
+							 </div>
+							 <div class="layout_box_content">
+									 <div id='prosecuting_agency9'>
+										 <p id="q4">
+											      in a class i can have as many constructors as i want with different argument types. i made all the constructors as private it didn't give any error because my implicit default constructor was public but when i declared my implicit default constructor as private then its showing an error while extending the class.  why?       this works fine         this can not be inherited       </br>
+														<code>public class demo4  {     private string name;     private int age;     private double sal;      private demo4(string name  int age) {         this.name=name;         this.age=age;        }      demo4(string name) {         this.name=name;     }      demo4() {         this(\"unknown\"  20);         this.sal=2000;     }      void show(){         system.out.println(\"name\"+name);         system.out.println(\"age: \"+age);     } }  public class demo4  {     private string name;     private int age;     private double sal;      private demo4(string name  int age) {         this.name=name;         this.age=age;     }      demo4(string name) {         this.name=name;     }      private demo4() {         this(\"unknown\"  20);         this.sal=2000;     }      void show() {         system.out.println(\"name\"+name);         system.out.println(\"age: \"+age);     } }  </code>
+										 </p>
+										 <button type="button" name ="q4">getRecommendations</button>
+									 </div>
+							 </div>
+					 </div>
+			 </div>
+			 <div class="col-sm-12">
+					<div class="layout_box">
+							<div class="layout_box_header">
+									<input style="font-size: 20px;" value="How indexing is done??" disabled>
+							</div>
+							<div class="layout_box_content">
+									<div id='prosecuting_agency10'>
+										<p>
+											The entire scraped data is divided into different subsections based on the sub-headings within the page. The data
+										once seperated based on the subheadings following components are indexed into elastic search
+									</p></br>
+										<ul class="list-group">
+											<li class="list-group-item"> Sub-heading </li>
+											<li class="list-group-item"> Content within the subheading </li>
+											<li class="list-group-item"> Main Heading and </li>
+											<li class="list-group-item"> Url to the content </li>
+											<li class="list-group-item"> Time </li>
+										</ul> </br>
+										<p>
+											Once the data is scraped and divided into the above components all the components are pushed into elasticsearch
+											to index them. Elasticsearch inbuilt has lucene structures and packages which handle <b>Stemming, Forming Invert Index, Stop or Buzz
+												words handling etc.,</b>.
+										</p></br>
+										<p> Following are the reasons for storing the above contents:</p></br>
+										<ul class="list-group">
+											<li class="list-group-item"> <b>Sub-Heading :</b> Main Keywords within the query can mostly match with the subheadings which will increase the score
+												of the actual content</li>
+												<li class="list-group-item"> <b> Content within the subheading: </b>   This is stored in order to have main content match</li>
+												<li class="list-group-item"> <b> Main heading: </b> Main heading is similar to sub-heading which adds to the weight </li>
+												<li class="list-group-item"> <b>Url: </b> Url is stored so that user can further go to the location to read the entire topic which makes the web page navigational friendly</li>
+												<li class="list-group-item"> <b>Time: </b> Just to have a note of the action</li>
+										</ul>
+										<button type="button" name ="q4">getRecommendations</button>
+									</div>
+							</div>
+					</div>
+			</div>
+       </div>
+    </div>
+		<script src="js/jquery-1.11.0.min-910066fb.js" type="text/javascript"></script>
+		<script src="js/d3-3.5.6.min-77adef17.js" type="text/javascript"></script>
+		<script src="js/c3.min-4c5bef8f.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/leaflet.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/jqcloud.min.js"></script>
+</body>
+
+</html>
