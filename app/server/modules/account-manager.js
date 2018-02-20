@@ -2,7 +2,7 @@
 // Elastic search end point is defined here
 var elasticsearch = require('elasticsearch');
 var client = new elasticsearch.Client({
-  host: 'https://search-recommendelastic-ywwju7f53jk2b2nmic2y656it4.us-east-2.es.amazonaws.com',
+  host: '' , // Your ElasticSearch API Endpoint
   log: 'trace'
 });
 
