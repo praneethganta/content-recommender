@@ -1,34 +1,8 @@
-#Behavioral Monitoring tool
+## Content Recommender 
 
+A basic tool which on user login provides 10 stack overflow issues wherein when a user selects one of the links the tool recommends 10 Java Tutorials related to the issue.
 
-###A basic account management system built in Node.js with the following features:
-
-* New User Account Creation
-* Session Tracking for Logged-In Users
-* Local Cookie Storage for Returning Users
-
-
-###Node-Login is built on top of the following libraries :
-
-* [Node.js](http://nodejs.org/) - Application Server
-* [Express.js](http://expressjs.com/) - Node.js Web Framework
-* [Ejs](http://ejs.co/) - HTML Templating Engine
-* Pg - Handling PostgreSQL queries
-
-##Instllation & Setup
-1. Install [Node.js](https://nodejs.org/) if you haven't already.
-2. Clone this repository and install its dependencies.
-
-		> git clone https://github.com/praneethganta/monitoring-tool.git
-		> cd monitoring-tool-master
-		> npm install
-
-3. From within the node-login directory, start the server.
-
-		> node app
-
-4. Open a browser window and navigate to: [http://localhost:8000](http://localhost:8000)
-
-##Contributing
-
-Questions and suggestions for improvement are welcome.
+### Tasks Involved:
+ * Scraping data from Java Wikibooks and storing it on ElasticSearch for Indexing
+ * Getting keywords from the stack overflow posts and searching it on ElasticSearch using ElasticSearch API
+ * Displaying the top 10 results on the webpage based on the score on the DB
